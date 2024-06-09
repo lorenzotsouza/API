@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "bd52d2fc-d5be-4eb6-9438-5fc691a9a760",
+		"name": "API and Web Services Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36194486",
+		"_collection_link": "https://www.postman.com/lorenzotsouza/workspace/my-workspace/collection/36194486-bd52d2fc-d5be-4eb6-9438-5fc691a9a760?action=share&source=collection_link&creator=36194486"
+	},
+	"item": [
+		{
+			"name": "https://www.w3schools.com/xml/tempconvert.asmx",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <soap12:Body>\r\n        <FahrenheitToCelsius xmlns=\"https://www.w3schools.com/xml/\">\r\n            <Fahrenheit>90</Fahrenheit>\r\n        </FahrenheitToCelsius>\r\n    </soap12:Body>\r\n</soap12:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.w3schools.com/xml/tempconvert.asmx",
+					"protocol": "https",
+					"host": [
+						"www",
+						"w3schools",
+						"com"
+					],
+					"path": [
+						"xml",
+						"tempconvert.asmx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
