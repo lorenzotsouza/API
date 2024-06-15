@@ -1,127 +1,127 @@
-                                  ----- SECTION 2 AND 3 -----
+----- Section 2 And 3 -----
 
-API = APPLICATION PROGRAM INTERFACE
+API = Application Program Interface
 
-BASIC EXAMPLE: GOOGLE SEARCH USING DESKTOP
-INTERFACE = DESKTOP
-PROGRAM = SEARCH
-APPLICATION = GOOGLE
+Basic Example: Google Search Using Desktop
+Interface = Desktop
+Program = Search
+Application = Google
 
-COMPLEX EXAMPLE: CREATE ORDERS IN SAP WHEN YOU GET THEM (NO BROWSER)
-INTERFACE = SAP
-PROGRAM = CREATE ORDER
-APPLICATION = SAP
+Complex Example: Create Orders In Sap When You Get Them (No Browser)
+Interface = SAP
+Program = Create Order
+Application = SAP
 
-WEB SERVICE
-WEB = INTERNET
-SERVICE = API
-WEB SERVICES ARE API THAT USES INTERNET.
-EVERY WEB SERVICES ARE API, BUT NOT ALL API ARE WEB SERVICES.
+Web Service
+Web = Internet
+Service = API
+Web Services Are API That Uses Internet.
+Every Web Services Are API, But Not All API Are Web Services.
 
-WEB SERVICES USE:
-XML OR JSON TO FORMAT DATA OVER THE INTERNET.
-REST, SOAP OR XML/RPC TO TRANSFER THAT DATA.
+Web Services Use:
+XML Or JSON To Format Data Over The Internet.
+REST, SOAP Or XML/RPC To Transfer That Data.
 
-                                   ----- SECTION 4 -----
+                                   ----- Section 4 -----
 
-HTTP = HYPER TEXT TRANSFER PROTOCOL
-THE REQUEST AND RESPONSE ARE MADE OF:
-1 START LINE
-2 HEADERS
-3 BLANK LINE
-4 BODY
+HTTP = Hyper Text Transfer Protocol
+The Request And Response Are Made Of:
+1 Start Line
+2 Headers
+3 Blank Line
+4 Body
 
-HOW IT WORKS:
+How It Works:
 
-START LINE REQUEST: HTTP VERSION(1.1), METHOD (GET, POST, PUT, DELETE)
-START LINE RESPONSE: HTTP VERSION(1.1), STATUS QUO (TELLS IF THE TRANSACTION WORKED)
+Start Line Request: HTTP Version(1.1), Method (Get, Post, Put, Delete)
+Start Line Response: HTTP Version(1.1), Status Quo (Tells If The Transaction Worked)
 
-HEADERS REQUEST: HOST(URL), TOKEN(SECURITY)
-HEADERS RESPONSE: COOKIES
+Headers Request: Host(Url), Token(Security)
+Headers Response: Cookies
 
-BLANK LINE JUST SEPARATES THE HEADERS FROM THE BODY.
+Blank Line Just Separates The Headers From The Body.
 
-BODY REQUEST: USERNAME, PASSWORD
-BODY RESPONSE: WHAT WE REQUESTED
+Body Request: Username, Password, Content
+Body Response: What We Requested, Content
 
-*** START LINE ***
+*** Start Line ***
 
-START LINE(REQUEST):
+Start Line(Request):
 
-GET = READ, POST = CREATE, PUT = UPDATE, DELETE = DELETE
-API PROGRAM FOLDER, EXAMPLE: GOOGLE SEARCH THE FOLDER IS /SEARCH
-PARAMETERS: YES
-FORMAT: METHOD(BLANK SPACE)API PROGRAM FOLDER LOCATION[OPTIONAL] + PARAMETERS[OPTIONAL](BLANK SPACE)HTTP VERSION
-EXAMPLE: GET /search?q=tuna HTTP/1.1
+Get = Read, Post = Create, Put = Update, Delete = Delete
+API Program Folder, Example: Google Search The Folder Is /Search
+Parameters: Yes
+Format: Method(Blank Space)API Program Folder Location[Optional] + Parameters[Optional](Blank Space)HTTP Version
+Example: Get /Search?Q=Tuna HTTP/1.1
 
-START LINE(RESPONSE): STATUS CODE (EXAMPLE: 200 OK)
-FORMAT: HTTP VERSION + STATUS CODE
-EXAMPLE: HTTP/1.1 200 OK
+Start Line(Response): Status Code (Example: 200 Ok)
+Format: HTTP Version + Status Code
+Example: HTTP/1.1 200 Ok
 
-IDEMPOTENCE (SAFE TO REPEAT OVER AND OVER AGAIN)
+Idempotence (Safe To Repeat Over And Over Again)
 
-GET = YES, POST = NO, PUT = YES, DELETE = YES
+Get = Yes, Post = No, Put = Yes, Delete = Yes
 
-*** HEADERS ***
-https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
-Authorization: Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
-Content-Type: Content-Type: application/json
-Date: Date: Tue, 15 Nov 1994 08:12:31 GMT-3
+*** Headers ***
+HTTPS://En.Wikipedia.Org/Wiki/List_Of_HTTP_Header_Fields
+Authorization: Authorization: Basic Qwxhzgrpbjpvcgvuihnlc2ftzq==
+Content-Type: Content-Type: Application/JSON
+Date: Date: Tue, 15 Nov 1994 08:12:31 Gmt-3
 
-*** BLANK LINE ***
-TELLS WHERE THE HEADERS FINISH AND WHERE THE BODY BEGINS.
+*** Blank Line ***
+Tells Where The Headers Finish And Where The Body Begins.
 
-*** BODY ***
-DESCRIBES THE TYPE, EXAMPLES:
-application/json
-text/xml
+*** Body ***
+Describes The Type, Examples:
+Application/JSON
+Text/XML
 
-*** ADVANCED TOPICS ***
+*** Advanced Topics ***
 
-STATELESS
-HTTP IS STATELESS BY DEFAULT
-HTTP METHODS: REST AND SOAP
-REST AND SOAP ARE STATELESS BY DEFAULT BECAUSE THEY USE HTTP.
-REST: REPRESENTATIONAL STATE TRANSFER
-SOAP: SIMPLE OBJECT ACCESS PROTOCOL
+Stateless
+HTTP Is Stateless By Default
+HTTP Methods: REST And SOAP
+REST And SOAP Are Stateless By Default Because They Use HTTP.
+REST: Representational State Transfer
+SOAP: Simple Object Access Protocol
 
-STATEFUL
-FTP: FILE TRANSFER PROTOCOL
+Stateful
+Ftp: File Transfer Protocol
 
-COOKIES ARE USED BY API'S TO REMEMBER THINGS.
-COOKIES DON'T USE PASSWORDS, THEY USE TOKENS INSTEAD.
+Cookies Are Used By API's To Remember Things.
+Cookies Don't Use Passwords, They Use Tokens Instead.
 
-                                   ----- SECTION 5 -----
+                                   ----- Section 5 -----
 
 *** XML ***
 
-XML = EXTENSIBLE MARKUP LANGUAGE
-HEADER LINE: Content-Type: application/xml
-BODY: XML
-XML USES TAGS <> JUST LIKE HTML, EXAMPLE: <BUTTON>click me!</BUTTON>
-CREATING A PIZZA ORDER IN XML:
+XML = Extensible Markup Language
+Header Line: Content-Type: Application/XML
+Body: XML
+XML Uses Tags <> Just Like HTML, Example: <Button>Click Me!</Button>
+Creating A Pizza Order In XML:
 
-<?xml version="1.0"?>
+<?XML Version="1.0"?>
 <Pizza>
-        <size>Small</size>
+        <Size>Small</Size>
         <Toppings>
                 <Topping>Onions</Topping>
                 <Topping>Tomatoes</Topping>
         </Toppings>
 </Pizza>
 
-ON XML, IT'S GOING TO CONDENSE ALL THE INFORMATION INSIDE THE PIZZA TAG.
+On XML, It's Going To Condense All The Information Inside The Pizza Tag.
 
-                                ----- SECTION 6 -----
+                                ----- Section 6 -----
 
 *** JSON ***
 
-JSON = JAVASCRIPT OBJECT NOTATION
-HEADER LINE: Content-Type: application/json
-BODY: JSON
-USES "Key" : "Value"
-EXAMPLE: "Size" : "Small"
-CREATING A PIZZA ORDER IN JSON:
+JSON = Javascript Object Notation
+Header Line: Content-Type: Application/JSON
+Body: JSON
+Uses "Key" : "Value"
+Example: "Size" : "Small"
+Creating A Pizza Order In JSON:
 
 { "Pizza" : [
         { "Size" : "Small",
@@ -133,122 +133,275 @@ CREATING A PIZZA ORDER IN JSON:
         ]
 }
 
-ON JSON, IT'S GOING TO CONDENSE ALL THE INFORMATION INSIDE INITIAL TAGS.
+On JSON, It's Going To Condense All The Information Inside Initial Tags.
 
-                                ----- SECTION 7 -----
+                                ----- Section 7 -----
 
-SOAP AND REST ARE WAYS TO FORM HTTP REQUEST AND RESPONSE.
+SOAP And REST Are Ways To Form HTTP Request And Response.
 
 *** SOAP ***
-SOAP = SIMPLE OBJECT ACCESS PROTOCOL
-IT HAS RULES TO FORM HTTP REQUEST AND RESPONSE
-USES A WSDL (WEB SERVICES DESCRIPTION LANGUAGE)
+SOAP = Simple Object Access Protocol
+It Has Rules To Form HTTP Request And Response
+Uses A Wsdl (Web Services Description Language)
 
-START LINE = POST WSDL HTTP VERSION (THE METHOD IS ALWAYS POST)
-HEADERS = Content-Type: text/xml
-BLANK LINE
-BODY = XML ENVELOPE FORMED USING WSDL
+Start Line = Post Wsdl HTTP Version (The Method Is Always Post)
+Headers = Content-Type: Text/XML
+Blank Line
+Body = XML Envelope Formed Using WSDL
 
-EVERY SOAP API USES POST.
-SOAP EXAMPLE UPLOADED TO GITHUB.
+Every SOAP API Uses Post.
+SOAP Example Uploaded To Github.
 
-                                ----- SECTION 8 -----
+                                ----- Section 8 -----
 
 *** REST ***
 
-REST = REPRESENTATIONAL STATE TRANSFER
-NO RULES
-USED TO COMPLETE A WEB SERVICE (API) USING HTTP
+REST = Representational State Transfer
+No Rules
+Used To Complete A Web Service (API) Using HTTP
 
-START LINE = ALL METHODS (POST, GET, PUT, DELETE)
-HEADERS = ALL
-BLANK LINE
-BODY = ANY (JSON, XML, IMAGES, HTML WEB PAGES, ETC)
+Start Line = All Methods (Post, Get, Put, Delete)
+Headers = All
+Blank Line
+Body = Any (JSON, XML, Images, HTML Web Pages, Etc)
 
-                                ----- SECTION 9 -----
+                                ----- Section 9 -----
 
-*** API ACCESS ***
+*** API Access ***
 
-HTTPS: THE "S" STANDS FOR SECURE, WHICH MEANS YOU ARE IN AN ENCRYPTED CHANNEL.
+HTTPS: The "S" Stands For Secure, Which Means You Are In An Encrypted Channel.
 
-AUTHENTICATION = PROVING YOUR IDENTITY
-AUTHORIZATION = LIMITED ACCESS TO RESOURCES
+Authentication = Proving Your Identity
+Authorization = Limited Access To Resources
 
-NAME               | AUTHENTICATION  | AUTHORIZATION | EXAMPLES
-NO AUTH            | N               | N             | GOOGLE SEARCH PAGE
-BASIC AUTH         | Y               | N             | EMAIL ACCOUNT
-BEARER TOKEN       | N               | Y             | NOT MANY
-OAUTH              | Y               | Y             | WAZE APP
-TWO FACTOR (2FA)   | Y               | N             | HIGH SECURITY
+Name               | Authentication  | Authorization | Examples
+No Auth            | N               | N             | Google Search Page
+Basic Auth         | Y               | N             | Email Account
+Bearer Token       | N               | Y             | Not Many
+OAuth              | Y               | Y             | Waze App
+Two Factor (2FA)   | Y               | N             | High Security
 
-*** TYPES OF APPS ***
+*** Types Of Apps ***
 
-NATIVE = RUNS IN THE OS (WINDOWS, MAC AND LINUX FOR COMPUTER. ANDROID AND IOS FOR MOBILE.)
-THE APP MUST BE CODED IN THE SAME OS AS IT IS GOING TO BE USED.
-EXAMPLE: ANDROID CALENDAR RUNS DIRECTLY ON THE ANDROID OS.
+Native = Runs In The OS (Windows, Mac And Linux For Computer. Android And IOS For Mobile.)
+The App Must Be Coded In The Same OS As It Is Going To Be Used.
+Example: Android Calendar Runs Directly On The Android OS.
 
-WEB = THE APP RUNS IN THE BROWSER, IT HAS LIMITED API'S THAT IT CAN USE.
+Web = The App Runs In The Browser, It Has Limited API's That It Can Use.
 
-HYBRID = IT HAS ASPECTS OF NATIVE AND WEB, THE BROWSER CALL'S DIRECTLY THE API/OS
-OR IT USES A MIDDLEWARE BEFORE REACHING THE API/OS.
+Hybrid = It Has Aspects Of Native And Web, The Browser Call's Directly The API/OS
+Or It Uses A Middleware Before Reaching The API/OS.
 
-                        COMPARISON
+                        Comparison
 
-                | NATIVE        | HYBRID        | WEB
-QUALITY         | X             |               |
-SPEED           | X             |               |
-COST            |               |               | X
-GOOGLE PLAY     | X             | X             |
-DEVICE ACCESS   | XX            | X             |
+                | Native        | Hybrid        | Web
+Quality         | X             |               |
+Speed           | X             |               |
+Cost            |               |               | X
+Google Play     | X             | X             |
+Device Access   | Xx            | X             |
 
-*** OAUTH 2.0 ***
-https://datatracker.ietf.org/doc/html/rfc6749
+*** Oauth 2.0 ***
+HTTPS://Datatracker.Ietf.Org/Doc/HTML/Rfc6749
 
-* ABSTRACT *
-OAUTH 2.0 ALLOWS A 3RD PARTY ACCESS
-LIMITED ACCESS (ONLY AUTHORIZED)
-TO A WEB SERVICE (HTTP)
-OAUTH 1.0 OBSOLETE
+* Abstract *
+OAuth 2.0 Allows A 3rd Party Access
+Limited Access (Only Authorized)
+To A Web Service (HTTP)
+OAuth 1.0 Obsolete
 
-* INTRODUCTION *
-THERE WAS A PROBLEM GIVING AWAY CREDENTIALS TO 3RD PARTY
-OAUTH INTRODUCES AUTHORIZATION LAYER
-INSTEAD OF CREDENTIALS, 3RD PARTY GETS ACCESS TOKEN
-MUST USE HTTP
+* Introduction *
+There Was A Problem Giving Away Credentials To 3rd Party
+Oauth Introduces Authorization Layer
+Instead Of Credentials, 3rd Party Gets Access Token
+Must Use HTTP
 
-* ROLES *
-RESOURCE OWNER
-RESOURCE SERVER
-CLIENT/APPLICATION
-AUTHORIZATION SERVER
+* Roles *
+Resource Owner
+Resource Server
+Client/Application
+Authorization Server
 
-* SERVER *
-WINDOWS SERVER IS AN COMPUTER WHICH THERE ARE SERVERS
-INSIDE IT THERE ARE SERVICES
-LOOKING AT THE SERVICES YOU KWOW WHICH IS RUNNING WAITING FOR REQUESTS (TO SERVE)
-OR IT IS STOPPED
-THERE'S ALSO THE "BACKUPS" SERVICES, WHICH RUN WHEN OTHERS ARE STOPPED.
+* Server *
+Windows Server Is An Computer Which There Are Servers
+Inside It There Are Services
+Looking At The Services You Kwow Which Is Running Waiting For Requests (To Serve)
+Or It Is Stopped
+There's Also The "Backups" Services, Which Run When Others Are Stopped.
 
-* COMMS ORDER *
-A - CLIENT REQUEST AUTH TO RESOURCE OWNER
-B - RESOURCE OWNER GRANT AUTH TO CLIENT
-C - CLIENT SEND THE AUTH TO AUTH SERVER
-D - AUTH SERVER GIVE THE ACCESS TOKEN TO CLIENT
-E - CLIENT SEND THE ACCESS TOKEN TO RESOURCE SERVER
-F - RESOURCE SERVER GIVE ACCESS TO THE PROTECTED RESOURCE TO THE CLIENT
+* Comms Order *
+A - Client Request Auth To Resource Owner
+B - Resource Owner Grant Auth To Client
+C - Client Send The Auth To Auth Server
+D - Auth Server Give The Access Token To Client
+E - Client Send The Access Token To Resource Server
+F - Resource Server Give Access To The Protected Resource To The Client
 
-* AUTHORIZATION GRANT TYPES *
-AUTHORIZATION CODE - CLIENT GETS PERMISSION TROUGH A CODE FROM THE RESOURCE SERVER
-IMPLICIT - CLIENT SENDS THE REQUISITION DIRECTLY ON THE CODE
-RESOURCE OWNER - SOMEONE WHO HAS FULL PERMISSION
-CLIENT CREDENTIALS - SOMEONE WHO HAS ALREADY AUTHORIZATION FOR THAT RESOURCE
+* Authorization Grant Types *
+Authorization Code - Client Gets Permission Trough A Code From The Resource Server
+Implicit - Client Sends The Requisition Directly On The Code
+Resource Owner - Someone Who Has Full Permission
+Client Credentials - Someone Who Has Already Authorization For That Resource
 
-WHEN AN ACCESS TOKEN HAS LIMITED TIME, CLIENT NEEDS TO USE THE REFRESH TOKEN
-SO IT CAN GET A NEW ACCESS TOKEN
+When An Access Token Has Limited Time, Client Needs To Use The Refresh Token
+So It Can Get A New Access Token
 
-                                ----- SECTION 10 -----
+                                ----- Section 10 -----
 
-*** POSTMAN ***
-WITH POSTMAN YOU CAN CALL AN API WITHOUT THE NEED OF AN INTERFACE
-EXAMPLE: SEND GET INFORMATION REQUEST TO WWW.EBAY.COM AND YOU RECEIVE THE API RESPONSE.
+*** Postman ***
+With Postman You Can Call An API Without The Need Of An Interface
+Example: Send Get Information Request To www.ebay.com And You Receive The API Response.
 
+Status Code Class | Meaning
+1xx               | Informational
+2xx               | Success
+3xx               | Redirected
+4xx               | Client Error
+5xx               | Server Error
+
+NoAuth Means You Don't Need An Auth To Use The API, It's Public, Everyone Can Access.
+
+BasicAuth Uses A Password And A Username, The Most Common.
+
+DigestAuth Uses A Hashed Digest Auth To Access An Endpoint, It's Formed In The Nounce Request. Can Use Http.
+
+Bearer Token, A Person Who Has A Token Of Access To Determined API. Must Use Https.
+
+OAuth - An App Uses Your Information To Communicate With The Program, The Program Returns The Information And The App Pass It To You. It Uses A Token.
+
+*** PYTHON ***
+
+You can save a file with the .py extension, and run it in Python to do the same work as we do in Postman. Example:
+
+import requests
+
+url = "https://www.googleapis.com/gmail/v1/users/swordfisher32@gmail.com/messages"
+
+querystring = {"access_token":"ya29.Glu7B1XnbYbZts0bWNmKgN9f_gTa_D_gWcXyRUTLt7K1G2r2z2z9Jx3SG8igGJbw"
+
+payload = ""
+responde = requests.request("GET", url, data=payload, params=querystring)
+
+print(response.text)
+
+It's going to request the information to the API by the Windows CMD.
+
+                                ----- Section 11 -----
+
+*** CREATING AN API USING AWS ***
+
+API Protocol    | Unsecure          | Secure
+HTTP            | HTTP              | HTTPS
+Web Socket      | WS                | WSS
+
+VPC = Virtual Private Cloud
+
+On AWS (logged) click on the search bar and type API Gateway, then click 
+on Create API (orange button), click on Build REST API, then click on Example API and Create API.
+
+It's going to create the Pet Store API example, for test purposes.
+
+Pet Store Example:
+https://62gn60f663.execute-api.us-east-1.amazonaws.com/Test/pets/2
+
+Now do the same steps before to create an API and select New API.
+
+We are going to create a Pizza Restaurant API.
+
+1. Database (DynamoDB - arn:aws:iam::590183987251:role/PizzaRole)
+2. Database Role to Access Database (PizzaRole and PizzaPolicy)
+3. Lambda (Program) to GET Pizza from Database
+4. GET API
+5. Lambda (Program) to POST Pizza in Database
+6. POST API
+
+1. CREATING THE DATABASE
+On AWS, look for RDS on search, click on create database. (relational)
+You can also create a NoSQL database with DynamoDB, but it's not common.
+
+We are going to use the DynamoDB here. After DB creation, go to items and create item.
+
+Here you can put new attributes to an item, to make it unique.
+On our example we are going to add strings, with id, size and toppings.
+
+2. CREATING ROLES
+Search for IAM and click on Roles. Click on create another.
+We are using the Lambda program to get order information from the database.
+Click on next permission and select the policies: AWSLambdaBasicExecutionRole, click next, put a name and confirm.
+After it's creation, click on "add inline policy" to specify what access we need. In that case, we are choosing DynamoDB with read "Getitem" and Write "Putitem", click on "add ARN" and put the ARN previously created, then click next, put name and confirm.
+
+3. CREATING THE PROGRAM WITH LAMBDA
+Search for Lambda on AWS and click on Create Function(program).
+Click com create a program from scratch, put name, select the Node.js runtime and our PizzaRole from the existing roles, confirm.
+Now, we are going to change the code for index.js, like this:
+
+//Bring in the AWS Library
+var AWS = require('aws-sdk');
+
+// Create DynamoDB document client
+exports.handler = async (event, context) => {
+var awsddbdc = new AWS.DynamoDB.DocumentClient({apiVersion: '2012-08-10'});
+
+//Path Parameters
+const {id} = event.pathParameters;
+
+//Query Parameters
+var params = {
+        TableName : 'Pizza',
+        Key : {
+                id: id
+                //id: '1'
+        }
+};
+
+const data = await awsddbdc.get(params).promise();
+const response = {
+        statusCode: '200',
+        body: JSON.stringify(data.Item)
+}
+
+return response;
+
+};
+
+4. CREATING THE GET API
+Go to API Gateway again to create a new API with the endpoint type "edge optimized". Now click on create resource put a name and create a path parameter on it.
+
+//Bring in the AWS Library
+var AWS = require('aws-sdk');
+
+// Create DynamoDB document client
+exports.handler = async (event, context) => {
+var awsddbdc = new AWS.DynamoDB.DocumentClient({apiVersion: '2012-08-10'});
+
+//Parse the incoming JSON values
+const {id,size,topping} = JSON.parse(event.body);
+
+//Query Parameters
+var params = {
+        TableName : 'Pizza',
+        Item : {
+                id: id,
+                size: size,
+                topping: topping
+                //id: '5', size: 'medium', topping: 'green peppers'
+        }
+};
+
+const data = await awsddbdc.put(params).promise();
+const response = {
+        statusCode: '201',
+        body: JSON.stringify(data.Item)
+}
+
+return response;
+
+};
+
+5. and 6. REPEAT THE PROCESS DID BEFORE FOR ITEMS 3. AND 4.
+
+Microservices are many API's(a collection of services) inside just one APP.
+
+A "Mashup" is an API that calls many API's.
+
+XML and JSON hold data that can be sent to and also come from the API.
